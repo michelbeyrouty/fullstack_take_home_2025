@@ -16,7 +16,7 @@ export function createApp() {
     const allowedOrigins = [
       'http://localhost:5173',
       'http://localhost:4173',
-      'https://fullstacktakehome2025.netlify.app/'
+      'https://fullstacktakehome2025.netlify.app'
     ];
 
     const origin = req.headers.origin;
