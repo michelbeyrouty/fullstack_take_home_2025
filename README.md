@@ -1,10 +1,14 @@
-# MaintainX Take-Home Project 🛠️
+# Take-Home Project 🛠️
 
 _"Wubba lubba dub dub!"_ - Just like Rick needs Morty to keep his chaotic inventions running smoothly, work orders need proper management to keep operations humming. This full-stack TypeScript application helps manage work orders and track team productivity across multiple dimensions of efficiency.
 
-## 💬 A Note to the MaintainX Team
+## 👁️‍🗨️ Original Instruction
 
-Thank you for reviewing this project! I'm genuinely excited about the opportunity to bring this same attention to detail and passion for well-crafted software to the MaintainX team. Building solutions that make a real difference - let's build something amazing together! 🚀
+For complete project requirements and specifications, see [ORIGINAL_INSTRUCTIONS.md](doc/ORIGINAL_INSTRUCTIONS.md).
+
+## 💬 A Note to the reader
+
+Thank you for checking this project! I'm genuinely excited about the opportunity to bring this same attention to detail and passion for any project I work on. Building solutions that make a real difference - let's build something amazing together! 🚀
 
 ## 🚀 Project Overview
 
