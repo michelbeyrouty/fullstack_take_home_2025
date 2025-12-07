@@ -1,0 +1,24 @@
+{
+  "name": "take-home-project",
+  "version": "0.1.0",
+  "packageManager": "yarn@4.9.2",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces foreach --all run build",
+    "build-watch": "concurrently \"yarn workspace take-home-project-frontend run build --watch\" \"yarn workspace take-home-project-backend run build --watch\"",
+    "ci": "yarn install --immutable && yarn dedupe --check && yarn build && yarn test run && yarn prettier-check",
+    "start": "concurrently \"yarn workspace take-home-project-frontend run start --host\" \"yarn workspace take-home-project-backend run start\"",
+    "test": "vitest",
+    "prettier-check": "prettier --check \"./**/src/**/*.{ts,tsx}\"",
+    "prettier-write": "prettier --write \"./**/src/**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}

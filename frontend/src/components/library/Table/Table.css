@@ -1,0 +1,110 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+}
+
+.generic-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.table-header {
+  background-color: #001e40;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #136cc9;
+}
+
+.table-row {
+  border-bottom: 1px solid #e1e5e9;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+.table-row.clickable {
+  cursor: pointer;
+}
+
+.table-row.clickable:hover {
+  background-color: #e3f2fd;
+}
+
+.table-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #2c3e50;
+  vertical-align: middle;
+  word-wrap: break-word;
+  max-width: 200px;
+}
+
+.table-cell:first-child {
+  font-weight: 500;
+}
+
+.table-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .table-header,
+  .table-cell {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .table-cell {
+    max-width: 150px;
+  }
+}
+
+/* Striped rows variant */
+.table-container.striped .table-row:nth-child(even) {
+  background-color: #f1f3f4;
+}
+
+.table-container.striped .table-row:nth-child(even):hover {
+  background-color: #e8eaf0;
+}
+
+/* Compact variant */
+.table-container.compact .table-header,
+.table-container.compact .table-cell {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* Bordered variant */
+.table-container.bordered .generic-table {
+  border: 1px solid #dee2e6;
+}
+
+.table-container.bordered .table-header,
+.table-container.bordered .table-cell {
+  border-right: 1px solid #dee2e6;
+}
+
+.table-container.bordered .table-header:last-child,
+.table-container.bordered .table-cell:last-child {
+  border-right: none;
+}

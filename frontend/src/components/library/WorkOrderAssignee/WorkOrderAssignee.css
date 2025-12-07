@@ -1,0 +1,34 @@
+.work-order-assignee {
+  position: relative;
+  cursor: pointer;
+}
+
+.work-order-assignee-tooltip {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background-color: #001e40;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  z-index: 1000;
+  margin-left: 8px;
+}
+
+.work-order-assignee-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-right-color: #001e40;
+}
+
+.work-order-assignee:hover .work-order-assignee-tooltip {
+  display: block;
+}

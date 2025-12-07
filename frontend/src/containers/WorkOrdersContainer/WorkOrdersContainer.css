@@ -1,0 +1,17 @@
+.option-row {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.work-orders-search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+}

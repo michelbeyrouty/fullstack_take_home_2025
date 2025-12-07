@@ -1,0 +1,40 @@
+.app-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.app-modal-dialog {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 6px;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.app-modal-message {
+  margin: 12px 0;
+}
+
+.app-modal-actions {
+  text-align: right;
+}
+
+.app-modal-close {
+  background: #001e40;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.app-modal-close:hover {
+  background: #136cc9;
+}
