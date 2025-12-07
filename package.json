@@ -1,7 +1,6 @@
 {
   "name": "take-home-project",
   "version": "0.1.0",
-  "packageManager": "yarn@4.9.2",
   "private": true,
   "scripts": {
     "build": "yarn workspace take-home-project-frontend run build",
