@@ -14,10 +14,9 @@ export function createApp() {
   // Add CORS middleware
   app.use((req, res, next) => {
     const allowedOrigins = [
-      'http://localhost:5173', // Local development
-      'http://localhost:4173', // Vite preview
-      // Add your Netlify domain here once deployed
-      // 'https://your-app.netlify.app'
+      'http://localhost:5173',
+      'http://localhost:4173',
+      'https://fullstacktakehome2025.netlify.app/'
     ];
 
     const origin = req.headers.origin;
