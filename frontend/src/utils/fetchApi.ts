@@ -15,9 +15,18 @@ export class HTTPError extends Error {
   }
 }
 
+// Get API base URL from environment variable or default to local proxy
+const getApiBaseUrl = () => {
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  return '/api'; // Default for local development
+};
+
 export default async function fetchApi({ endpoint = "/", method = "GET", data }: IFetchAPIParams = {}) {
   try {
-    const response = await fetch(`/api${endpoint}`, {
+    const apiBaseUrl = getApiBaseUrl();
+    const response = await fetch(`${apiBaseUrl}${endpoint}`, {
       method,
       headers: {
         Accept: "application/json",
