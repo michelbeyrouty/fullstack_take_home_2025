@@ -65,18 +65,8 @@ The setup comes with an home page with basic styling and an example frontend pag
 - We will use the code submitted to evaluate your technical knowledge. Use this take-home as an opportunity to showcase your skills.
 - You can use coding assistants or generative AI tools to help with this project. If you do, please commit your prompts and, if possible, give us a sense of your workflow. We'd love to understand how those tools fit into your process.
 
-## Get started
+## Original Look
 
-### Prerequisites
+![Original Application Screenshot](original_look.png)
 
-- NodeJS 20.x or newer
-- `yarn` (https://yarnpkg.com/lang/en/docs/install/)
-
-### Commands
-
-- Run `yarn install` in the root directory to install the necessary packages
-- Run `yarn start` to start the backend server & frontend assets.
-  - The backend server will restart automatically when it detects changes.
-  - The frontend provider will hot-reload any changes made into the page.
-- Run `yarn test` to run the tests.
-  - There are no tests provided, but we provide the testing framework `vitest` and the configuration to run tests.
+*The original application interface before implementing the requested features.*
