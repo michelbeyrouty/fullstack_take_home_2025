@@ -4,7 +4,7 @@ _"Wubba lubba dub dub!"_ - Just like Rick needs Morty to keep his chaotic invent
 
 ## 👁️‍🗨️ Original Instruction
 
-For complete project requirements and specifications, see [ORIGINAL_INSTRUCTIONS.md](doc/ORIGINAL_INSTRUCTIONS.md).
+For complete project requirements and specifications, see [original instructions](doc/ORIGINAL_INSTRUCTIONS.md).
 
 ## 💬 A Note to the reader
 
