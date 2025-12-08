@@ -1,3 +1,5 @@
+import config from "../constants/config";
+
 type NeededHTTPMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 
 interface IFetchAPIParams {
@@ -15,18 +17,9 @@ export class HTTPError extends Error {
   }
 }
 
-// Get API base URL from environment variable or default to local proxy
-const getApiBaseUrl = () => {
-  if (import.meta.env.VITE_API_URL) {
-    return import.meta.env.VITE_API_URL;
-  }
-  return '/api'; // Default for local development
-};
-
 export default async function fetchApi({ endpoint = "/", method = "GET", data }: IFetchAPIParams = {}) {
   try {
-    const apiBaseUrl = getApiBaseUrl();
-    const response = await fetch(`${apiBaseUrl}${endpoint}`, {
+    const response = await fetch(`${config.BACKEND_BASE_URL}${endpoint}`, {
       method,
       headers: {
         Accept: "application/json",
