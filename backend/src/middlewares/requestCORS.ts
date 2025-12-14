@@ -5,7 +5,7 @@ export default function requestCORS(req: Request, res: Response, next: NextFunct
     const allowedOrigins = [
       'http://localhost:5173',
       'http://localhost:4173',
-      'https://fullstacktakehome2025.netlify.app'
+      'https://fullstacktakehome.michelbeyrouty.com'
     ];
 
     const origin = req.headers.origin;
